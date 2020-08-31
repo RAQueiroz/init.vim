@@ -1,0 +1,18 @@
+{
+  "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "initializationOptions": {
+        "elmAnalyseTrigger": "change",
+	"elmFormatPath": "elm-format"
+      }
+    }
+  },
+  "codeLens.enable": true,
+  "coc.preferences.jumpCommand": "vertical new",
+  "coc.preferences.formatOnSaveFiletypes": ["elm"]
+}
+
+
