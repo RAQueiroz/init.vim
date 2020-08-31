@@ -7,6 +7,7 @@ call plug#begin()
 	Plug 'haishanh/night-owl.vim'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+	Plug 'dracula/vim', {'as': 'dracula'}
 	Plug 'junegunn/fzf'
 call plug#end()
 
@@ -16,7 +17,8 @@ if (has("termguicolors"))
 	set termguicolors
 endif
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-colorscheme night-owl
+"colorscheme night-owl
+colorscheme dracula
 "let g:lightline = {'colorscheme': 'nightowl'}
 
 " clipboard integrations
@@ -45,7 +47,7 @@ set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
-
+let mapleader=","
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
 if has("patch-8.1.1564")
