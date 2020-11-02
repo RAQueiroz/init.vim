@@ -11,8 +11,9 @@
     }
   },
   "codeLens.enable": true,
-  "coc.preferences.jumpCommand": "vertical new",
-  "coc.preferences.formatOnSaveFiletypes": ["elm"]
+  "coc.preferences.jumpCommand": "vsplit",
+  "coc.preferences.formatOnSaveFiletypes": ["js, css, elm"],
+  "prettier.requireConfig": true
 }
 
 
