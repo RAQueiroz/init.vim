@@ -4,16 +4,32 @@
       "command": "elm-language-server",
       "filetypes": ["elm"],
       "rootPatterns": ["elm.json"],
+      "trace.server": "verbose",
       "initializationOptions": {
-        "elmAnalyseTrigger": "change",
-	"elmFormatPath": "elm-format"
+        "elmFormatPath": "elm-format",
+        "elmAnalyseTrigger": "change"
       }
     }
   },
   "codeLens.enable": true,
   "coc.preferences.jumpCommand": "vsplit",
-  "coc.preferences.formatOnSaveFiletypes": ["js, css, elm"],
-  "prettier.requireConfig": true
+  "coc.preferences.formatOnSaveFiletypes": [
+    "elm",
+    "js",
+    "css"
+  ],
+  "snippets.ultisnips.directories":
+    [
+      "UltiSnips",
+      "~/.config/nvim/utils/snips"
+    ],
+    // explorer
+    "explorer.width": 30,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.previewAction.onHover": false,
+    "explorer.keyMappings.global": {
+      "<cr>": ["expandable?", "expand", "open"],
+      "v": "open:vsplit",
+      "t": "open:tab"
+    }
 }
-
-
